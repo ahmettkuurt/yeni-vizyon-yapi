@@ -27,7 +27,7 @@ export default function Footer() {
           {/* Brand */}
           <div className="lg:col-span-1">
             <div className="flex items-center gap-3 mb-6">
-              <img src={images.logo} alt="Yeni Vizyon Yapı" className="h-12 w-auto rounded-lg" />
+              <img src={images.logo3} alt="Yeni Vizyon Yapı" className="h-12 w-auto rounded-lg" />
               <div>
                 <span className="text-lg font-bold">Yeni Vizyon</span>
                 <span className="block text-xs font-medium tracking-widest text-[#E8B84B] uppercase">Yapı</span>

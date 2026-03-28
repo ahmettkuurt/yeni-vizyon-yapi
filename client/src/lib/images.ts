@@ -1,9 +1,12 @@
 // CDN Image URLs - Yeni Vizyon Yapı
 const CDN = "https://d2xsxph8kpxj0f.cloudfront.net/310519663387419978/mCo9BNNsomx6Qaif2pyUXZ";
+const LOCAL_PATH = "/images";
 
 export const images = {
   logo: `${CDN}/WhatsAppImage2026-03-24at17.27.28(1)_879c7e1d.jpeg`,
   logo2: `${CDN}/WhatsAppImage2026-03-24at17.27.28_aed9dbc0.jpeg`,
+  logo3: `${LOCAL_PATH}/WhatsApp Image 2026-03-24 at 17.27.28.png`,
+
   
   // Project gallery images (construction work photos only)
   projects: [

@@ -40,7 +40,7 @@ export default function Navbar() {
         {/* Logo */}
         <a href="#" onClick={() => scrollTo("home")} className="flex items-center gap-3 group">
           <img
-            src={images.logo}
+            src={images.logo3}
             alt="Yeni Vizyon Yapı"
             className="h-12 w-auto rounded-lg shadow-sm group-hover:shadow-md transition-shadow"
           />

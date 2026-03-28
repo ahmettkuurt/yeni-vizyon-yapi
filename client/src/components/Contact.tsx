@@ -8,8 +8,41 @@ export default function Contact() {
   const { t } = useTranslation();
   const [submitted, setSubmitted] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+
+    // Form verilerini alıyoruz
+    const formData = new FormData(e.currentTarget);
+    const data = {
+      name: formData.get("name"),
+      email: formData.get("email"),
+      phone: formData.get("phone"),
+      message: formData.get("message"),
+    };
+
+    // WhatsApp mesaj taslağını oluşturuyoruz
+const whatsappMessage = `*🏢 YENİ VİZYON YAPI - İLETİŞİM FORMU*
+---------------------------------------
+📌 *Müşteri Bilgileri:*
+👤 *İsim:* ${data.name}
+📧 *E-posta:* ${data.email}
+📞 *Telefon:* ${data.phone}
+
+📝 *Mesaj Detayı:*
+${data.message}
+
+---------------------------------------
+🗓️ *Tarih:* ${new Date().toLocaleDateString('tr-TR')}
+🕒 *Saat:* ${new Date().toLocaleTimeString('tr-TR', { hour: '2-digit', minute: '2-digit' })}
+_Bu mesaj web sitesi üzerinden otomatik olarak oluşturulmuştur._`;
+
+    const encodedMessage = encodeURIComponent(whatsappMessage);
+    const WHATSAPP_NUMBER = "905324498536";
+
+    // WhatsApp'ı yeni sekmede açıyoruz
+    window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodedMessage}`, "_blank");
+
+    // Form başarı animasyonunu tetikliyoruz
     setSubmitted(true);
     toast.success(t("contact.success"));
     setTimeout(() => setSubmitted(false), 3000);
@@ -72,7 +105,9 @@ export default function Contact() {
                   </div>
                   <div>
                     <div className="text-sm text-white/50 mb-1 font-[family-name:var(--font-body)]">{t("contact.address")}</div>
-                    <div className="text-white/90 font-medium font-[family-name:var(--font-body)]">{t("contact.addressVal")}</div>
+                    <a href="https://maps.app.goo.gl/Xi7GW5hmNaSuep6p6" target="_blank" className="text-white/90 font-medium hover:text-[#E8B84B] transition-colors font-[family-name:var(--font-body)]">
+                      {t("contact.addressVal")}
+                    </a>
                   </div>
                 </div>
 
@@ -128,6 +163,7 @@ export default function Contact() {
                   <input
                     type="text"
                     required
+                    name="name"
                     className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-[#1976D2] focus:ring-2 focus:ring-[#1976D2]/10 outline-none transition-all text-sm font-[family-name:var(--font-body)] bg-white text-[#0D2137]"
                     placeholder={t("contact.namePlaceholder") || "Ahmet Yılmaz"}
                   />
@@ -139,6 +175,7 @@ export default function Contact() {
                   <input
                     type="email"
                     required
+                    name="email"
                     className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-[#1976D2] focus:ring-2 focus:ring-[#1976D2]/10 outline-none transition-all text-sm font-[family-name:var(--font-body)] bg-white text-[#0D2137]"
                     placeholder={t("contact.emailPlaceholder") || "ornek@email.com"}
                   />
@@ -151,6 +188,7 @@ export default function Contact() {
                 </label>
                 <input
                   type="tel"
+                  name="phone"
                   className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-[#1976D2] focus:ring-2 focus:ring-[#1976D2]/10 outline-none transition-all text-sm font-[family-name:var(--font-body)] bg-white text-[#0D2137]"
                   placeholder={t("contact.phonePlaceholder") || "0532 000 00 00"}
                 />
@@ -163,6 +201,7 @@ export default function Contact() {
                 <textarea
                   required
                   rows={5}
+                  name="message"
                   className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-[#1976D2] focus:ring-2 focus:ring-[#1976D2]/10 outline-none transition-all text-sm resize-none font-[family-name:var(--font-body)] bg-white text-[#0D2137]"
                   placeholder={t("contact.message") || ""}
                 />
