@@ -75,6 +75,10 @@ const resources = {
         projects: "Tamamlanan Proje",
         clients: "Mutlu Müşteri",
         area: "m² İnşaat Alanı"
+      },
+      whatsapp: {
+        tooltip: "Merhaba! Size nasıl yardımcı olabiliriz?",
+        defaultMessage: "Merhaba, bilgi almak istiyorum."
       }
     }
   },
@@ -150,6 +154,10 @@ const resources = {
         projects: "Completed Projects",
         clients: "Happy Clients",
         area: "m² Construction Area"
+      },
+      whatsapp: {
+        tooltip: "Hello! How can we help you?",
+        defaultMessage: "Hello, I would like to get information."
       }
     }
   },
@@ -225,6 +233,10 @@ const resources = {
         projects: "已完成项目",
         clients: "满意客户",
         area: "平方米建筑面积"
+      },
+      whatsapp: {
+        tooltip: "您好！我们能为您做什么？",
+        defaultMessage: "您好，我想了解更多信息。"
       }
     }
   },
@@ -300,6 +312,10 @@ const resources = {
         projects: "Abgeschlossene Projekte",
         clients: "Zufriedene Kunden",
         area: "m² Baufläche"
+      },
+      whatsapp: {
+        tooltip: "Hallo! Wie können wir Ihnen helfen?",
+        defaultMessage: "Hallo, ich möchte Informationen erhalten."
       }
     }
   },
@@ -375,6 +391,10 @@ const resources = {
         projects: "مشروع مكتمل",
         clients: "عميل سعيد",
         area: "م² مساحة البناء"
+      },
+      whatsapp: {
+        tooltip: "مرحباً! كيف يمكننا مساعدتك؟",
+        defaultMessage: "مرحبا، أريد الحصول على معلومات."
       }
     }
   }
