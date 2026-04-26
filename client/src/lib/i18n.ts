@@ -1,54 +1,76 @@
-import i18n from 'i18next';
-import { initReactI18next } from 'react-i18next';
-import LanguageDetector from 'i18next-browser-languagedetector';
+import i18n from "i18next";
+import { initReactI18next } from "react-i18next";
+import LanguageDetector from "i18next-browser-languagedetector";
 
 const resources = {
   tr: {
     translation: {
-      nav: { home: "Ana Sayfa", about: "Hakkımızda", services: "Hizmetler", projects: "Projeler", contact: "İletişim" },
+      nav: {
+        home: "Ana Sayfa",
+        about: "Hakkımızda",
+        services: "Hizmetler",
+        projects: "Projeler",
+        contact: "İletişim",
+      },
       hero: {
         title: "Geleceği İnşa Ediyoruz",
-        subtitle: "Yeni Vizyon Yapı olarak, modern mimari anlayışı ve yılların deneyimiyle hayallerinizi gerçeğe dönüştürüyoruz.",
+        subtitle:
+          "Yeni Vizyon Yapı olarak, modern mimari anlayışı ve yılların deneyimiyle hayallerinizi gerçeğe dönüştürüyoruz.",
         cta: "Projelerimizi Keşfedin",
-        ctaSecondary: "Bize Ulaşın"
+        ctaSecondary: "Bize Ulaşın",
       },
       about: {
         tag: "Hakkımızda",
-        title: "Güven, Kalite ve Vizyon",
-        desc: "Yeni Vizyon Yapı, İstanbul merkezli olarak konut, ticari ve endüstriyel projelerde uzmanlaşmış bir inşaat firmasıdır. Müşteri memnuniyetini ön planda tutarak, en yüksek kalite standartlarında projeler teslim ediyoruz.",
-        desc2: "Deneyimli mühendis kadromuz ve modern teknoloji kullanımımızla, her projeyi zamanında ve bütçe dahilinde tamamlıyoruz.",
-        experience: "Yıllık Deneyim",
-        iso: "ISO 9001 Sertifikalı",
-        team: "Uzman Kadro",
-        delivery: "Zamanında Teslimat",
-        quality: "Kalite Garantisi"
+        title: "Metal ve Otomasyonda Güçlü Vizyon",
+        desc: "Yeni Vizyon Yapı, İstanbul merkezli olarak otomatik kepenk sistemleri, çelik konstrüksiyon yapılar ve mimari metal çözümleri alanında uzmanlaşmış lider bir firmadır. Estetiği güvenlikle buluşturan ferforje, alüminyum doğrama ve endüstriyel otomasyon projelerinde yüksek kalite standartlarını mimari hassasiyetle birleştiriyoruz.",
+        desc2:
+          "Dayanıklı çelik yapılar, modern ofis bölme sistemleri ve akıllı geçiş çözümlerimizle; projelerinizi ileri teknoloji ve uzman işçilikle zamanında hayata geçiriyoruz. Teknik ustalığımızı, mekanlarınıza değer katan yenilikçi tasarımlarla harmanlıyoruz.",
+        experience: "Yıllık Tecrübe",
+        iso: "Yüksek Standartlı İşçilik",
+        team: "Teknik Uzman Kadro",
+        delivery: "Hızlı ve Güvenli Montaj",
+        quality: "%100 Çelik ve Otomasyon Garantisi",
       },
       services: {
         tag: "Hizmetlerimiz",
-        title: "Profesyonel İnşaat Çözümleri",
-        residential: "Konut Projeleri",
-        residentialDesc: "Modern ve konforlu yaşam alanları tasarlıyor, en yüksek kalite standartlarında konut projeleri gerçekleştiriyoruz.",
-        commercial: "Ticari Projeler",
-        commercialDesc: "İş merkezleri, ofis binaları ve ticari yapılar için anahtar teslim çözümler sunuyoruz.",
-        renovation: "Tadilat ve Restorasyon",
-        renovationDesc: "Mevcut yapıların modernizasyonu ve restorasyonu konusunda uzman ekibimizle hizmet veriyoruz.",
-        infrastructure: "Altyapı Projeleri",
-        infrastructureDesc: "Yol, köprü ve altyapı projelerinde güvenilir ve sürdürülebilir çözümler üretiyoruz.",
-        consulting: "Proje Danışmanlığı",
-        consultingDesc: "İnşaat projelerinizin her aşamasında profesyonel danışmanlık hizmeti sağlıyoruz.",
-        design: "Mimari Tasarım",
-        designDesc: "Estetik ve fonksiyonelliği bir araya getiren özgün mimari tasarımlar oluşturuyoruz."
+        title: "Profesyonel Metal, Otomasyon ve Yapı Çözümleri",
+
+        residential: "Çelik Yapı ve Sundurma Sistemleri",
+        residentialDesc:
+          "Modern ve dayanıklı çelik/prefabrik evler, açık otopark sundurmaları ve yüksek taşıma kapasiteli çelik konstrüksiyon projeleri hayata geçiriyoruz.",
+
+        commercial: "Otomatik Kapı ve Kepenk Sistemleri",
+        commercialDesc:
+          "Mağazalar ve tesisler için fotoselli cam kapılar, otomatik motorlu kepenkler ve endüstriyel yana kayar bahçe/fabrika kapıları kuruyoruz.",
+
+        renovation: "Alüminyum Doğrama ve Ofis Bölme",
+        renovationDesc:
+          "İş yerleri ve ticari alanlar için estetik alüminyum vitrinler, dış cepheler ve modern ofis içi cam bölme sistemleri uyguluyoruz.",
+
+        infrastructure: "Çelik Merdiven Sistemleri",
+        infrastructureDesc:
+          "İç ve dış mekanlar için yüksek güvenlikli yangın merdivenleri, dekoratif çelik merdivenler ve endüstriyel çalışma platformları üretiyoruz.",
+
+        consulting: "Hafif Çelik ve Duvar Profil Sistemleri",
+        consultingDesc:
+          "İç mekanlarınızı yapılandırmak için galvanizli hafif çelik duvar karkasları, alçıpan profilleri ve sağlam bölme duvar sistemleri inşa ediyoruz.",
+
+        design: "Ferforje ve Mimari Demir Doğrama",
+        designDesc:
+          "Mekanlarınıza değer katan özel tasarım, lüks detaylı ferforje bahçe/villa kapıları, korkuluklar ve sanatsal demir doğrama işleri yapıyoruz.",
       },
       projects: {
         tag: "Projelerimiz",
         title: "Tamamlanan Projeler",
         subtitle: "Başarıyla tamamladığımız projelerden bazıları",
-        project: "Proje"
+        project: "Proje",
+        all: "Tüm Projeler",
       },
       contact: {
         tag: "İletişim",
         title: "Bizimle İletişime Geçin",
-        subtitle: "Projeleriniz için ücretsiz keşif ve danışmanlık hizmeti alın.",
+        subtitle:
+          "Projeleriniz için ücretsiz keşif ve danışmanlık hizmeti alın.",
         name: "Adınız Soyadınız",
         email: "E-posta Adresiniz",
         phone: "Telefon Numaranız",
@@ -56,78 +78,95 @@ const resources = {
         send: "Mesaj Gönder",
         success: "Mesajınız başarıyla gönderildi!",
         address: "Adres",
-        addressVal: "Y. Dudullu Mah. Nato Yolu Cad. No: 174/1 Ümraniye / İstanbul",
+        addressVal:
+          "Y. Dudullu Mah. Nato Yolu Cad. No: 174/1 Ümraniye / İstanbul",
         phoneVal: "0532 449 85 36",
         emailVal: "yenivizyonyapiistanbul@gmail.com",
         available: "7/24 Ulaşılabilir",
         namePlaceholder: "Ahmet Yılmaz",
         emailPlaceholder: "ornek@email.com",
-        phonePlaceholder: "0532 000 00 00"
+        phonePlaceholder: "0532 000 00 00",
       },
       footer: {
-        desc: "Yeni Vizyon Yapı, İstanbul merkezli profesyonel inşaat ve taahhüt firmasıdır.",
+        desc: "Yeni Vizyon Yapı, İstanbul merkezli olarak otomatik kepenk sistemlerinden ağır çelik konstrüksiyona, modern alüminyum doğramadan estetik ferforje çözümlerine kadar geniş bir yelpazede hizmet veren profesyonel bir metal ve yapı sistemleri uzmanıdır. Kalite, güven ve yenilikçi tasarımı bir araya getirerek projelerinize değer katıyoruz.",
         quickLinks: "Hızlı Bağlantılar",
         contactInfo: "İletişim Bilgileri",
-        rights: "Tüm hakları saklıdır."
+        rights: "Tüm hakları saklıdır.",
       },
       stats: {
         experience: "Yıllık Deneyim",
         projects: "Tamamlanan Proje",
         clients: "Mutlu Müşteri",
-        area: "m² İnşaat Alanı"
+        area: "m² İnşaat Alanı",
       },
       whatsapp: {
         tooltip: "Merhaba! Size nasıl yardımcı olabiliriz?",
-        defaultMessage: "Merhaba, bilgi almak istiyorum."
-      }
-    }
+        defaultMessage: "Merhaba, bilgi almak istiyorum.",
+      },
+    },
   },
   en: {
     translation: {
-      nav: { home: "Home", about: "About", services: "Services", projects: "Projects", contact: "Contact" },
+      nav: {
+        home: "Home",
+        about: "About",
+        services: "Services",
+        projects: "Projects",
+        contact: "Contact",
+      },
       hero: {
         title: "Building the Future",
-        subtitle: "At Yeni Vizyon Yapı, we turn your dreams into reality with modern architectural understanding and years of experience.",
+        subtitle:
+          "At Yeni Vizyon Yapı, we turn your dreams into reality with modern architectural understanding and years of experience.",
         cta: "Explore Our Projects",
-        ctaSecondary: "Contact Us"
+        ctaSecondary: "Contact Us",
       },
       about: {
         tag: "About Us",
-        title: "Trust, Quality and Vision",
-        desc: "Yeni Vizyon Yapı is an Istanbul-based construction company specializing in residential, commercial and industrial projects. We deliver projects at the highest quality standards, prioritizing customer satisfaction.",
-        desc2: "With our experienced engineering team and modern technology, we complete every project on time and within budget.",
+        title: "Strong Vision in Metal and Automation",
+        desc: "Yeni Vizyon Yapı is a leading Istanbul-based company specializing in automatic roller shutter systems, steel construction structures, and architectural metal solutions. We combine high quality standards with architectural precision in wrought iron, aluminum joinery, and industrial automation projects that bring aesthetics and security together.",
+        desc2:
+          "With durable steel structures, modern office partitioning systems, and smart access solutions, we bring your projects to life on time with advanced technology and expert craftsmanship. We blend our technical mastery with innovative designs that add value to your spaces.",
         experience: "Years of Experience",
-        iso: "ISO 9001 Certified",
-        team: "Expert Team",
-        delivery: "On-Time Delivery",
-        quality: "Quality Guarantee"
+        iso: "High Standard Craftsmanship",
+        team: "Expert Technical Team",
+        delivery: "Fast and Safe Installation",
+        quality: "100% Steel and Automation Guarantee",
       },
       services: {
         tag: "Our Services",
-        title: "Professional Construction Solutions",
-        residential: "Residential Projects",
-        residentialDesc: "We design modern and comfortable living spaces, delivering residential projects at the highest quality standards.",
-        commercial: "Commercial Projects",
-        commercialDesc: "We offer turnkey solutions for business centers, office buildings and commercial structures.",
-        renovation: "Renovation & Restoration",
-        renovationDesc: "We provide services with our expert team in modernization and restoration of existing structures.",
-        infrastructure: "Infrastructure Projects",
-        infrastructureDesc: "We produce reliable and sustainable solutions in road, bridge and infrastructure projects.",
-        consulting: "Project Consulting",
-        consultingDesc: "We provide professional consulting services at every stage of your construction projects.",
-        design: "Architectural Design",
-        designDesc: "We create unique architectural designs that combine aesthetics and functionality."
+        title: "Professional Metal, Automation, and Construction Solutions",
+        residential: "Steel Structure and Canopy Systems",
+        residentialDesc:
+          "We bring to life modern and durable steel/prefab houses, open car park canopies, and high-load-bearing steel construction projects.",
+        commercial: "Automatic Door and Roller Shutter Systems",
+        commercialDesc:
+          "We install photocell glass doors, automatic motorized roller shutters, and industrial sliding garden/factory gates for stores and facilities.",
+        renovation: "Aluminum Joinery and Office Partitioning",
+        renovationDesc:
+          "We apply aesthetic aluminum showcases, exterior facades, and modern interior glass partition systems for workplaces and commercial areas.",
+        infrastructure: "Steel Stair Systems",
+        infrastructureDesc:
+          "We manufacture high-security fire escapes, decorative steel stairs, and industrial work platforms for indoor and outdoor spaces.",
+        consulting: "Light Steel and Wall Profile Systems",
+        consultingDesc:
+          "We build galvanized light steel wall frames, drywall profiles, and solid partition wall systems to structure your interiors.",
+        design: "Wrought Iron and Architectural Ironworks",
+        designDesc:
+          "We create custom-designed, luxury-detailed wrought iron garden/villa gates, railings, and artistic iron joinery works that add value to your spaces.",
       },
       projects: {
         tag: "Our Projects",
         title: "Completed Projects",
         subtitle: "Some of our successfully completed projects",
-        project: "Project"
+        project: "Project",
+        all: "All Projects",
       },
       contact: {
         tag: "Contact",
         title: "Get in Touch With Us",
-        subtitle: "Get free site inspection and consulting services for your projects.",
+        subtitle:
+          "Get free site inspection and consulting services for your projects.",
         name: "Your Full Name",
         email: "Your Email Address",
         phone: "Your Phone Number",
@@ -135,73 +174,89 @@ const resources = {
         send: "Send Message",
         success: "Your message has been sent successfully!",
         address: "Address",
-        addressVal: "Y. Dudullu Mah. Nato Yolu Cad. No: 174/1 Ümraniye / İstanbul",
+        addressVal:
+          "Y. Dudullu Mah. Nato Yolu Cad. No: 174/1 Ümraniye / İstanbul",
         phoneVal: "0532 449 85 36",
         emailVal: "yenivizyonyapiistanbul@gmail.com",
         available: "Available 24/7",
         namePlaceholder: "John Smith",
         emailPlaceholder: "example@email.com",
-        phonePlaceholder: "+90 532 000 00 00"
+        phonePlaceholder: "+90 532 000 00 00",
       },
       footer: {
-        desc: "Yeni Vizyon Yapı is a professional construction and contracting company based in Istanbul.",
+        desc: "Based in Istanbul, Yeni Vizyon Yapı is a professional metal and building systems specialist providing a wide range of services from automatic roller shutter systems to heavy steel construction, and from modern aluminum joinery to aesthetic wrought iron solutions. We add value to your projects by combining quality, trust, and innovative design.",
         quickLinks: "Quick Links",
         contactInfo: "Contact Information",
-        rights: "All rights reserved."
+        rights: "All rights reserved.",
       },
       stats: {
         experience: "Years of Experience",
         projects: "Completed Projects",
         clients: "Happy Clients",
-        area: "m² Construction Area"
+        area: "m² Construction Area",
       },
       whatsapp: {
         tooltip: "Hello! How can we help you?",
-        defaultMessage: "Hello, I would like to get information."
-      }
-    }
+        defaultMessage: "Hello, I would like to get information.",
+      },
+    },
   },
   zh: {
     translation: {
-      nav: { home: "首页", about: "关于我们", services: "服务", projects: "项目", contact: "联系我们" },
+      nav: {
+        home: "首页",
+        about: "关于我们",
+        services: "服务",
+        projects: "项目",
+        contact: "联系我们",
+      },
       hero: {
         title: "建设未来",
-        subtitle: "Yeni Vizyon Yapı凭借现代建筑理念和多年经验，将您的梦想变为现实。",
+        subtitle:
+          "Yeni Vizyon Yapı凭借现代建筑理念和多年经验，将您的梦想变为现实。",
         cta: "探索我们的项目",
-        ctaSecondary: "联系我们"
+        ctaSecondary: "联系我们",
       },
       about: {
         tag: "关于我们",
-        title: "信任、质量与愿景",
-        desc: "Yeni Vizyon Yapı是一家总部位于伊斯坦布尔的建筑公司，专注于住宅、商业和工业项目。我们以客户满意为首要目标，以最高质量标准交付项目。",
-        desc2: "凭借经验丰富的工程团队和现代技术，我们按时并在预算内完成每个项目。",
+        title: "在金属与自动化领域的强大愿景",
+        desc: "Yeni Vizyon Yapı 是一家总部位于伊斯坦布尔的领先企业，专注于自动卷帘门系统、钢结构建筑和建筑金属解决方案。在将美学与安全相结合的铁艺、铝合金门窗和工业自动化项目中，我们将高质量标准与建筑精确度完美融合。",
+        desc2:
+          "凭借耐用的钢结构、现代办公隔断系统和智能通道解决方案，我们通过先进技术和精湛工艺按时实现您的项目。我们将技术优势与为您的空间增值的创新设计融为一体。",
         experience: "年经验",
-        iso: "ISO 9001认证",
-        team: "专业团队",
-        delivery: "准时交付",
-        quality: "质量保证"
+        iso: "高标准工艺",
+        team: "技术专家团队",
+        delivery: "快速安全的安装",
+        quality: "100% 钢铁与自动化保证",
       },
       services: {
         tag: "我们的服务",
-        title: "专业建筑解决方案",
-        residential: "住宅项目",
-        residentialDesc: "我们设计现代舒适的生活空间，以最高质量标准交付住宅项目。",
-        commercial: "商业项目",
-        commercialDesc: "我们为商业中心、办公楼和商业建筑提供交钥匙解决方案。",
-        renovation: "翻新与修复",
-        renovationDesc: "我们的专业团队提供现有建筑的现代化和修复服务。",
-        infrastructure: "基础设施项目",
-        infrastructureDesc: "我们在道路、桥梁和基础设施项目中提供可靠和可持续的解决方案。",
-        consulting: "项目咨询",
-        consultingDesc: "我们在建筑项目的每个阶段提供专业咨询服务。",
-        design: "建筑设计",
-        designDesc: "我们创造将美学与功能性相结合的独特建筑设计。"
+        title: "专业的金属、自动化与建筑解决方案",
+        residential: "钢结构与顶棚系统",
+        residentialDesc:
+          "我们致力于打造现代耐用的钢结构/预制房屋、露天停车场顶棚以及高承重钢结构项目。",
+        commercial: "自动门与卷帘门系统",
+        commercialDesc:
+          "我们为门店和设施安装感应玻璃门、电动卷帘门以及工业庭院/工厂平移门。",
+        renovation: "铝合金门窗与办公隔断",
+        renovationDesc:
+          "我们为工作场所和商业区提供美观的铝合金橱窗、外墙以及现代室内玻璃隔断系统。",
+        infrastructure: "钢楼梯系统",
+        infrastructureDesc:
+          "我们为室内外空间制造高安全性的消防通道、装饰性钢楼梯和工业工作平台。",
+        consulting: "轻钢与墙体型材系统",
+        consultingDesc:
+          "我们使用镀锌轻钢墙体骨架、石膏板型材和坚固的隔墙系统来构建您的室内空间。",
+        design: "铁艺与建筑铁艺门窗",
+        designDesc:
+          "我们定制设计具有奢华细节的铁艺庭院/别墅大门、栏杆和艺术铁艺工程，为您的空间增添价值。",
       },
       projects: {
         tag: "我们的项目",
         title: "已完成的项目",
         subtitle: "我们成功完成的部分项目",
-        project: "项目"
+        project: "项目",
+        all: "所有项目",
       },
       contact: {
         tag: "联系方式",
@@ -214,78 +269,95 @@ const resources = {
         send: "发送消息",
         success: "您的消息已成功发送！",
         address: "地址",
-        addressVal: "Y. Dudullu Mah. Nato Yolu Cad. No: 174/1 Ümraniye / İstanbul",
+        addressVal:
+          "Y. Dudullu Mah. Nato Yolu Cad. No: 174/1 Ümraniye / İstanbul",
         phoneVal: "0532 449 85 36",
         emailVal: "yenivizyonyapiistanbul@gmail.com",
         available: "全天候服务",
         namePlaceholder: "张三",
         emailPlaceholder: "example@email.com",
-        phonePlaceholder: "+90 532 000 00 00"
+        phonePlaceholder: "+90 532 000 00 00",
       },
       footer: {
-        desc: "Yeni Vizyon Yapı是一家总部位于伊斯坦布尔的专业建筑和承包公司。",
+        desc: "Yeni Vizyon Yapı 总部位于伊斯坦布尔，是一家专业的金属与建筑系统专家。我们提供从自动卷帘门系统到重型钢结构、从现代铝合金门窗到美观铁艺解决方案的广泛服务。我们通过将品质、信任与创新设计相结合，为您的项目增添价值。",
         quickLinks: "快速链接",
         contactInfo: "联系信息",
-        rights: "版权所有。"
+        rights: "版权所有。",
       },
       stats: {
         experience: "年经验",
         projects: "已完成项目",
         clients: "满意客户",
-        area: "平方米建筑面积"
+        area: "平方米建筑面积",
       },
       whatsapp: {
         tooltip: "您好！我们能为您做什么？",
-        defaultMessage: "您好，我想了解更多信息。"
-      }
-    }
+        defaultMessage: "您好，我想了解更多信息。",
+      },
+    },
   },
   de: {
     translation: {
-      nav: { home: "Startseite", about: "Über uns", services: "Dienstleistungen", projects: "Projekte", contact: "Kontakt" },
+      nav: {
+        home: "Startseite",
+        about: "Über uns",
+        services: "Dienstleistungen",
+        projects: "Projekte",
+        contact: "Kontakt",
+      },
       hero: {
         title: "Wir Bauen die Zukunft",
-        subtitle: "Bei Yeni Vizyon Yapı verwandeln wir Ihre Träume mit modernem architektonischem Verständnis und jahrelanger Erfahrung in Realität.",
+        subtitle:
+          "Bei Yeni Vizyon Yapı verwandeln wir Ihre Träume mit modernem architektonischem Verständnis und jahrelanger Erfahrung in Realität.",
         cta: "Unsere Projekte Entdecken",
-        ctaSecondary: "Kontaktieren Sie Uns"
+        ctaSecondary: "Kontaktieren Sie Uns",
       },
       about: {
         tag: "Über Uns",
-        title: "Vertrauen, Qualität und Vision",
-        desc: "Yeni Vizyon Yapı ist ein in Istanbul ansässiges Bauunternehmen, das auf Wohn-, Gewerbe- und Industrieprojekte spezialisiert ist. Wir liefern Projekte nach höchsten Qualitätsstandards und stellen die Kundenzufriedenheit in den Vordergrund.",
-        desc2: "Mit unserem erfahrenen Ingenieurteam und moderner Technologie schließen wir jedes Projekt termingerecht und im Budget ab.",
+        title: "Starke Vision in Metall und Automatisierung",
+        desc: "Yeni Vizyon Yapı ist ein führendes Unternehmen mit Sitz in Istanbul, das sich auf automatische Rollladensysteme, Stahlbaukonstruktionen und architektonische Metalllösungen spezialisiert hat. Wir verbinden hohe Qualitätsstandards mit architektonischer Präzision bei Schmiedeeisen-, Aluminiumbau- und industriellen Automatisierungsprojekten, die Ästhetik und Sicherheit vereinen.",
+        desc2:
+          "Mit langlebigen Stahlkonstruktionen, modernen Bürotrennwandsystemen und intelligenten Zugangslösungen realisieren wir Ihre Projekte pünktlich durch fortschrittliche Technologie und fachmännische Handwerkskunst. Wir kombinieren unser technisches Können mit innovativen Designs, die Ihren Räumen Mehrwert verleihen.",
         experience: "Jahre Erfahrung",
-        iso: "ISO 9001 Zertifiziert",
-        team: "Expertenteam",
-        delivery: "Pünktliche Lieferung",
-        quality: "Qualitätsgarantie"
+        iso: "Handwerkskunst auf hohem Niveau",
+        team: "Technisches Expertenteam",
+        delivery: "Schnelle und sichere Montage",
+        quality: "100% Stahl- und Automatisierungsgarantie",
       },
       services: {
         tag: "Unsere Dienstleistungen",
-        title: "Professionelle Baulösungen",
-        residential: "Wohnprojekte",
-        residentialDesc: "Wir entwerfen moderne und komfortable Wohnräume und liefern Wohnprojekte nach höchsten Qualitätsstandards.",
-        commercial: "Gewerbeprojekte",
-        commercialDesc: "Wir bieten schlüsselfertige Lösungen für Geschäftszentren, Bürogebäude und Gewerbebauten.",
-        renovation: "Renovierung & Restaurierung",
-        renovationDesc: "Wir bieten mit unserem Expertenteam Dienstleistungen bei der Modernisierung und Restaurierung bestehender Gebäude.",
-        infrastructure: "Infrastrukturprojekte",
-        infrastructureDesc: "Wir produzieren zuverlässige und nachhaltige Lösungen bei Straßen-, Brücken- und Infrastrukturprojekten.",
-        consulting: "Projektberatung",
-        consultingDesc: "Wir bieten professionelle Beratungsdienstleistungen in jeder Phase Ihrer Bauprojekte.",
-        design: "Architektonisches Design",
-        designDesc: "Wir schaffen einzigartige architektonische Designs, die Ästhetik und Funktionalität vereinen."
+        title: "Professionelle Metall-, Automatisierungs- und Baulösungen",
+        residential: "Stahlbau- und Überdachungssysteme",
+        residentialDesc:
+          "Wir realisieren moderne und langlebige Stahl-/Fertighäuser, offene Parkplatzüberdachungen und hochbelastbare Stahlbauprojekte.",
+        commercial: "Automatische Tür- und Rollladensysteme",
+        commercialDesc:
+          "Wir installieren automatische Glasschiebetüren, motorisierte Rollläden und industrielle Schiebetore für Geschäfte und Anlagen.",
+        renovation: "Aluminiumbau und Bürotrennwände",
+        renovationDesc:
+          "Wir setzen ästhetische Aluminiumschaufenster, Außenfassaden und moderne gläserne Bürotrennwandsysteme für Arbeitsplätze und Gewerbeflächen um.",
+        infrastructure: "Stahltreppensysteme",
+        infrastructureDesc:
+          "Wir fertigen hochsichere Feuertreppen, dekorative Stahltreppen und industrielle Arbeitsbühnen für den Innen- und Außenbereich.",
+        consulting: "Leichtstahl- und Wandprofilsysteme",
+        consultingDesc:
+          "Wir bauen verzinkte Leichtstahl-Wandrahmen, Trockenbauprofile und massive Trennwandsysteme zur Strukturierung Ihrer Innenräume.",
+        design: "Schmiedeeisen und architektonische Metallarbeiten",
+        designDesc:
+          "Wir fertigen maßgeschneiderte, luxuriöse schmiedeeiserne Garten-/Villentore, Geländer und kunstvolle Metallarbeiten, die Ihren Räumen Wert verleihen.",
       },
       projects: {
         tag: "Unsere Projekte",
         title: "Abgeschlossene Projekte",
         subtitle: "Einige unserer erfolgreich abgeschlossenen Projekte",
-        project: "Projekt"
+        project: "Projekt",
+        all: "Alle Projekte",
       },
       contact: {
         tag: "Kontakt",
         title: "Kontaktieren Sie Uns",
-        subtitle: "Erhalten Sie kostenlose Besichtigung und Beratung für Ihre Projekte.",
+        subtitle:
+          "Erhalten Sie kostenlose Besichtigung und Beratung für Ihre Projekte.",
         name: "Ihr vollständiger Name",
         email: "Ihre E-Mail-Adresse",
         phone: "Ihre Telefonnummer",
@@ -293,73 +365,89 @@ const resources = {
         send: "Nachricht Senden",
         success: "Ihre Nachricht wurde erfolgreich gesendet!",
         address: "Adresse",
-        addressVal: "Y. Dudullu Mah. Nato Yolu Cad. No: 174/1 Ümraniye / İstanbul",
+        addressVal:
+          "Y. Dudullu Mah. Nato Yolu Cad. No: 174/1 Ümraniye / İstanbul",
         phoneVal: "0532 449 85 36",
         emailVal: "yenivizyonyapiistanbul@gmail.com",
         available: "Rund um die Uhr erreichbar",
         namePlaceholder: "Max Mustermann",
         emailPlaceholder: "beispiel@email.com",
-        phonePlaceholder: "+90 532 000 00 00"
+        phonePlaceholder: "+90 532 000 00 00",
       },
       footer: {
-        desc: "Yeni Vizyon Yapı ist ein professionelles Bau- und Vertragsunternehmen mit Sitz in Istanbul.",
+        desc: "Yeni Vizyon Yapı mit Sitz in Istanbul ist ein professioneller Spezialist für Metall- und Bausysteme, der ein breites Spektrum an Dienstleistungen anbietet – von automatischen Rollladensystemen über schweren Stahlbau bis hin zu modernen Aluminiumkonstruktionen und ästhetischen Schmiedeeisenlösungen. Wir verleihen Ihren Projekten Wert, indem wir Qualität, Vertrauen und innovatives Design vereinen.",
         quickLinks: "Schnelllinks",
         contactInfo: "Kontaktinformationen",
-        rights: "Alle Rechte vorbehalten."
+        rights: "Alle Rechte vorbehalten.",
       },
       stats: {
         experience: "Jahre Erfahrung",
         projects: "Abgeschlossene Projekte",
         clients: "Zufriedene Kunden",
-        area: "m² Baufläche"
+        area: "m² Baufläche",
       },
       whatsapp: {
         tooltip: "Hallo! Wie können wir Ihnen helfen?",
-        defaultMessage: "Hallo, ich möchte Informationen erhalten."
-      }
-    }
+        defaultMessage: "Hallo, ich möchte Informationen erhalten.",
+      },
+    },
   },
   ar: {
     translation: {
-      nav: { home: "الرئيسية", about: "من نحن", services: "خدماتنا", projects: "مشاريعنا", contact: "اتصل بنا" },
+      nav: {
+        home: "الرئيسية",
+        about: "من نحن",
+        services: "خدماتنا",
+        projects: "مشاريعنا",
+        contact: "اتصل بنا",
+      },
       hero: {
         title: "نبني المستقبل",
-        subtitle: "في يني فيزيون يابي، نحول أحلامكم إلى حقيقة بفهم معماري حديث وسنوات من الخبرة.",
+        subtitle:
+          "في يني فيزيون يابي، نحول أحلامكم إلى حقيقة بفهم معماري حديث وسنوات من الخبرة.",
         cta: "اكتشف مشاريعنا",
-        ctaSecondary: "تواصل معنا"
+        ctaSecondary: "تواصل معنا",
       },
       about: {
         tag: "من نحن",
-        title: "الثقة والجودة والرؤية",
-        desc: "يني فيزيون يابي هي شركة بناء مقرها إسطنبول متخصصة في المشاريع السكنية والتجارية والصناعية. نقدم مشاريع بأعلى معايير الجودة مع إعطاء الأولوية لرضا العملاء.",
-        desc2: "بفضل فريقنا الهندسي ذو الخبرة والتكنولوجيا الحديثة، ننجز كل مشروع في الوقت المحدد وضمن الميزانية.",
+        title: "رؤية قوية في مجال المعادن والأتمتة",
+        desc: "Yeni Vizyon Yapı هي شركة رائدة مقرها إسطنبول تتخصص في أنظمة الأبواب الدوارة الأوتوماتيكية، والهياكل الفولاذية، والحلول المعدنية المعمارية. نحن نجمع بين معايير الجودة العالية والدقة المعمارية في مشاريع الحديد المطاوع، وأعمال الألمنيوم، والأتمتة الصناعية التي تجمع بين الجمال والأمان.",
+        desc2:
+          "من خلال الهياكل الفولاذية المتينة، وأنظمة قواطع المكاتب الحديثة، وحلول المرور الذكية؛ نقوم بإنجاز مشاريعكم في الوقت المحدد باستخدام التكنولوجيا المتقدمة والمهارة المهنية. نحن نمزج براعتنا الفنية مع تصميمات مبتكرة تضفي قيمة على مساحاتكم.",
         experience: "سنوات من الخبرة",
-        iso: "شهادة ISO 9001",
-        team: "فريق متخصص",
-        delivery: "التسليم في الوقت المحدد",
-        quality: "ضمان الجودة"
+        iso: "حرفية عالية المعايير",
+        team: "فريق فني خبير",
+        delivery: "تركيب سريع وآمن",
+        quality: "ضمان 100% على الفولاذ والأتمتة",
       },
       services: {
         tag: "خدماتنا",
-        title: "حلول بناء احترافية",
-        residential: "المشاريع السكنية",
-        residentialDesc: "نصمم مساحات معيشة حديثة ومريحة ونقدم مشاريع سكنية بأعلى معايير الجودة.",
-        commercial: "المشاريع التجارية",
-        commercialDesc: "نقدم حلولاً جاهزة لمراكز الأعمال والمباني المكتبية والهياكل التجارية.",
-        renovation: "التجديد والترميم",
-        renovationDesc: "نقدم خدمات تحديث وترميم المباني القائمة بفريقنا المتخصص.",
-        infrastructure: "مشاريع البنية التحتية",
-        infrastructureDesc: "ننتج حلولاً موثوقة ومستدامة في مشاريع الطرق والجسور والبنية التحتية.",
-        consulting: "استشارات المشاريع",
-        consultingDesc: "نقدم خدمات استشارية احترافية في كل مرحلة من مراحل مشاريع البناء الخاصة بكم.",
-        design: "التصميم المعماري",
-        designDesc: "نبتكر تصاميم معمارية فريدة تجمع بين الجمال والوظيفة."
+        title: "حلول احترافية في المعادن، الأتمتة، والبناء",
+        residential: "الهياكل الفولاذية وأنظمة المظلات",
+        residentialDesc:
+          "نقوم بتنفيذ منازل جاهزة وفولاذية حديثة ومتينة، ومظلات مواقف السيارات المفتوحة، ومشاريع البناء الفولاذية ذات القدرة العالية على التحمل.",
+        commercial: "أنظمة الأبواب والأنظمة الأوتوماتيكية",
+        commercialDesc:
+          "نقوم بتركيب أبواب زجاجية ذات مستشعرات ضوئية، وأبواب رول شتر أوتوماتيكية، وأبواب سحابة صناعية للحدائق والمصانع والمتاجر والمرافق.",
+        renovation: "أعمال الألمنيوم وقواطع المكاتب",
+        renovationDesc:
+          "نقوم بتنفيذ واجهات ألمنيوم جمالية، وواجهات خارجية، وأنظمة قواطع زجاجية داخلية حديثة لأماكن العمل والمناطق التجارية.",
+        infrastructure: "أنظمة السلالم الفولاذية",
+        infrastructureDesc:
+          "نصنع سلالم طوارئ عالية الأمان، وسلالم فولاذية مزخرفة، ومنصات عمل صناعية للمساحات الداخلية والخارجية.",
+        consulting: "أنظمة الفولاذ الخفيف ومقاطع الجدران",
+        consultingDesc:
+          "نقوم ببناء هياكل جدران من الفولاذ الخفيف المجلفن، ومقاطع ألواح الجبس، وأنظمة جدران فاصلة متينة لتشكيل مساحاتك الداخلية.",
+        design: "الحديد المطاوع والأعمال الحديدية المعمارية",
+        designDesc:
+          "نقوم بتصميمات مخصصة بلمسات فاخرة لأبواب الحدائق والفلل من الحديد المطاوع، والدرابزين، والأعمال الحديدية الفنية التي تضفي قيمة على مساحاتك.",
       },
       projects: {
         tag: "مشاريعنا",
         title: "المشاريع المكتملة",
         subtitle: "بعض مشاريعنا التي أنجزناها بنجاح",
-        project: "مشروع"
+        project: "مشروع",
+        all: "جميع المشاريع",
       },
       contact: {
         tag: "اتصل بنا",
@@ -372,32 +460,33 @@ const resources = {
         send: "إرسال الرسالة",
         success: "تم إرسال رسالتك بنجاح!",
         address: "العنوان",
-        addressVal: "Y. Dudullu Mah. Nato Yolu Cad. No: 174/1 Ümraniye / İstanbul",
+        addressVal:
+          "Y. Dudullu Mah. Nato Yolu Cad. No: 174/1 Ümraniye / İstanbul",
         phoneVal: "0532 449 85 36",
         emailVal: "yenivizyonyapiistanbul@gmail.com",
         available: "متاح على مدار الساعة",
         namePlaceholder: "أحمد محمد",
         emailPlaceholder: "example@email.com",
-        phonePlaceholder: "+90 532 000 00 00"
+        phonePlaceholder: "+90 532 000 00 00",
       },
       footer: {
-        desc: "يني فيزيون يابي هي شركة بناء ومقاولات احترافية مقرها إسطنبول.",
+        desc: "شركة Yeni Vizyon Yapı، ومقرها إسطنبول، هي متخصصة محترفة في أنظمة المعادن والبناء، تقدم مجموعة واسعة من الخدمات بدءاً من أنظمة الأبواب الدوارة الأوتوماتيكية إلى الهياكل الفولاذية الثقيلة، ومن أعمال الألمنيوم الحديثة إلى حلول الحديد المطاوع الجمالية. نحن نضيف قيمة لمشاريعكم من خلال الجمع بين الجودة والثقة والتصميم المبتكر.",
         quickLinks: "روابط سريعة",
         contactInfo: "معلومات الاتصال",
-        rights: "جميع الحقوق محفوظة."
+        rights: "جميع الحقوق محفوظة.",
       },
       stats: {
         experience: "سنوات من الخبرة",
         projects: "مشروع مكتمل",
         clients: "عميل سعيد",
-        area: "م² مساحة البناء"
+        area: "م² مساحة البناء",
       },
       whatsapp: {
         tooltip: "مرحباً! كيف يمكننا مساعدتك؟",
-        defaultMessage: "مرحبا، أريد الحصول على معلومات."
-      }
-    }
-  }
+        defaultMessage: "مرحبا، أريد الحصول على معلومات.",
+      },
+    },
+  },
 };
 
 i18n
@@ -405,15 +494,15 @@ i18n
   .use(initReactI18next)
   .init({
     resources,
-    lng: localStorage.getItem('i18nextLng') || 'tr',
-    fallbackLng: 'tr',
+    lng: localStorage.getItem("i18nextLng") || "tr",
+    fallbackLng: "tr",
     interpolation: {
-      escapeValue: false
+      escapeValue: false,
     },
     detection: {
-      order: ['localStorage'],
-      caches: ['localStorage']
-    }
+      order: ["localStorage"],
+      caches: ["localStorage"],
+    },
   });
 
 export default i18n;

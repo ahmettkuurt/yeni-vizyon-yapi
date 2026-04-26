@@ -1,9 +1,30 @@
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
-import { Home, Building2, Wrench, Construction, Lightbulb, Compass } from "lucide-react";
+import {
+  Home,
+  Building2,
+  Wrench,
+  Construction,
+  Lightbulb,
+  Compass,
+} from "lucide-react";
 
-const serviceIcons = [Home, Building2, Wrench, Construction, Lightbulb, Compass];
-const serviceKeys = ["residential", "commercial", "renovation", "infrastructure", "consulting", "design"] as const;
+const serviceIcons = [
+  Home,
+  Building2,
+  Wrench,
+  Construction,
+  Lightbulb,
+  Compass,
+];
+const serviceKeys = [
+  "residential",
+  "commercial",
+  "renovation",
+  "infrastructure",
+  "consulting",
+  "design",
+] as const;
 
 export default function Services() {
   const { t } = useTranslation();
@@ -41,11 +62,19 @@ export default function Services() {
             return (
               <motion.div
                 key={key}
+                onClick={() => {
+                  // URL'deki hash'i değiştirerek Projects bileşenindeki useEffect'i tetikleriz
+                  window.location.hash = `projects-${key}`;
+                  // Sayfayı projeler kısmına kaydır
+                  document
+                    .getElementById("projects")
+                    ?.scrollIntoView({ behavior: "smooth" });
+                }}
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: i * 0.1 }}
-                className="group relative bg-white rounded-2xl p-8 shadow-sm border border-gray-100 hover:shadow-xl hover:shadow-[#1976D2]/5 hover:-translate-y-1 transition-all duration-300"
+                className="group cursor-pointer relative bg-white rounded-2xl p-8 shadow-sm border border-gray-100 hover:shadow-xl hover:shadow-[#1976D2]/5 hover:-translate-y-1 transition-all duration-300"
               >
                 {/* Icon */}
                 <div className="w-14 h-14 rounded-xl bg-[#1976D2]/10 flex items-center justify-center mb-6 group-hover:bg-[#1976D2] transition-colors duration-300">
