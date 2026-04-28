@@ -14,7 +14,7 @@ export type ProjectCategory =
 export const images = {
   logo: `${CDN}/WhatsAppImage2026-03-24at17.27.28(1)_879c7e1d.jpeg`,
   logo2: `${CDN}/WhatsAppImage2026-03-24at17.27.28_aed9dbc0.jpeg`,
-  logo3: `${LOCAL_PATH}/WhatsApp Image 2026-03-24 at 17.27.28.png`,
+  logo3: `${LOCAL_PATH}/logoo-removebg-preview.png`,
 
   // Project gallery images (construction work photos only)
   projects: [
@@ -82,14 +82,14 @@ export const images = {
     {
       url: `${LOCAL_PATH}/WhatsApp Image 2026-04-19 at 22.39.25.png`,
       category: "design",
-    }, // Altın Varaklı Ferforje 2
+    }
   ],
 
   // Hero background - modern building exterior
   hero: `${CDN}/WhatsAppImage2026-03-24at17.27.43(3)_454e0df2.jpeg`,
 
   // About section - interior/construction work
-  about: `${CDN}/WhatsAppImage2026-03-24at17.27.32(1)_751e9ddd.jpeg`,
+  about: `${LOCAL_PATH}/about.png`,
 
   // Service images
   serviceResidential: `${CDN}/WhatsAppImage2026-03-24at17.27.30_6292b6e1.jpeg`,

@@ -1,0 +1,22 @@
+name: Natro Otomatik Güncelleme
+
+on:
+  push:
+    branches:
+      - main # Eğer GitHub'daki ana dalın adı master ise burayı master yapmayı unutma
+
+jobs:
+  web-deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+    steps:
+    - name: Kodları Çek
+      uses: actions/checkout@v3
+
+    - name: Dosyaları Sunucuya Gönder
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+      with:
+        server: 94.73.147.156        # Yeni Shared IP Address
+        username: u2680154           # Yeni Geçerli Kullanıcı
+        password: ${{ secrets.FTP_PASSWORD }} 
+        server-dir: /public_html/    # Sitenin ana dizini
