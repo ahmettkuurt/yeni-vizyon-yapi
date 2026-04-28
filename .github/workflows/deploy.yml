@@ -31,4 +31,4 @@ jobs:
         password: ${{ secrets.FTP_PASSWORD }}
         # ÖNEMLİ: Sadece build klasörünün içindekileri gönderiyoruz
         local-dir: ./dist/public/ 
-        server-dir: /public_html/
+        server-dir: public_html/
