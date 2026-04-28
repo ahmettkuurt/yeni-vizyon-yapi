@@ -5,6 +5,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { defineConfig, type Plugin, type ViteDevServer } from "vite";
 import { vitePluginManusRuntime } from "vite-plugin-manus-runtime";
+import Sitemap from 'vite-plugin-sitemap';
 
 // =============================================================================
 // Manus Debug Collector - Vite Plugin
@@ -150,7 +151,11 @@ function vitePluginManusDebugCollector(): Plugin {
   };
 }
 
-const plugins = [react(), tailwindcss(), jsxLocPlugin(), vitePluginManusRuntime(), vitePluginManusDebugCollector()];
+const plugins = [react(), tailwindcss(), jsxLocPlugin(), vitePluginManusRuntime(), vitePluginManusDebugCollector(), Sitemap({
+    hostname: 'https://yenivizyonyapi.com',
+    // Projenin build çıktısını aldığı klasörle aynı olmalı
+    outDir: path.resolve(import.meta.dirname, "dist/public")
+  })];
 
 export default defineConfig({
   base: './',
