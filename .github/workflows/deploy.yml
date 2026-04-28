@@ -15,7 +15,7 @@ jobs:
     - name: Node.js Kurulumu
       uses: actions/setup-node@v3
       with:
-        node-version: 18 # Projenin kullandığı Node versiyonuna göre değiştirebilirsin
+        node-version: 22 # Projenin kullandığı Node versiyonuna göre değiştirebilirsin
 
     - name: Bağımlılıkları Yükle
       run: npm install --legacy-peer-deps
