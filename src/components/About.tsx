@@ -31,7 +31,7 @@ export default function About() {
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
               <img
                 src={images.about}
-                alt="About Yeni Vizyon Yapı"
+                alt="Yeni Vizyon Yapı logosu"
                 className="w-full h-[500px] object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#0D2137]/40 to-transparent" />

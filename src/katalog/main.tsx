@@ -1,5 +1,11 @@
-import { createRoot } from "react-dom/client";
+import { createRoot, hydrateRoot } from "react-dom/client";
 import Catalog from "./Catalog";
 import "./katalog.css";
 
-createRoot(document.getElementById("root")!).render(<Catalog />);
+const root = document.getElementById("root")!;
+
+if (root.firstElementChild) {
+  hydrateRoot(root, <Catalog />);
+} else {
+  createRoot(root).render(<Catalog />);
+}

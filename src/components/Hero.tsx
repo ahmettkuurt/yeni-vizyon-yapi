@@ -12,7 +12,8 @@ export default function Hero() {
       <div className="absolute inset-0">
         <img
           src={images.hero}
-          alt="Construction"
+          alt="Yeni Vizyon Yapı çelik konstrüksiyon uygulaması"
+          fetchPriority="high"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-[#0D2137]/85 via-[#0D2137]/60 to-[#0D2137]/30" />

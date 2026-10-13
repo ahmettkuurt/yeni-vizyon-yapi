@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Sayfa eklendiğinde veya içerik değiştiğinde lastmod tarihini güncelleyin. -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://yenivizyonyapi.com/</loc>
+    <lastmod>2026-10-13</lastmod>
+    <image:image><image:loc>https://yenivizyonyapi.com/images/hero.webp</image:loc></image:image>
+    <image:image><image:loc>https://yenivizyonyapi.com/images/kepenk-1.webp</image:loc></image:image>
+    <image:image><image:loc>https://yenivizyonyapi.com/images/celik-ev.webp</image:loc></image:image>
+    <image:image><image:loc>https://yenivizyonyapi.com/images/aluminyum-vitrin.webp</image:loc></image:image>
+    <image:image><image:loc>https://yenivizyonyapi.com/images/yangin-merdiveni.webp</image:loc></image:image>
+    <image:image><image:loc>https://yenivizyonyapi.com/images/hafif-celik-1.webp</image:loc></image:image>
+    <image:image><image:loc>https://yenivizyonyapi.com/images/ferforje-kapi-1.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://yenivizyonyapi.com/katalog/</loc>
+    <lastmod>2026-10-13</lastmod>
+  </url>
+</urlset>

@@ -33,4 +33,7 @@ jobs:
         # Sadece build çıktısı (dist) gönderilir
         local-dir: ./dist/
         server-dir: public_html/
+        # Hangi dosyaların yüklendiğini bu dosyada tutar. Eski kayıt (.ftp-deploy-sync-state.json)
+        # artık olmayan klasörleri sildirmeye çalışıp hata verdiği için yeni bir kayıt dosyası kullanılıyor.
+        state-name: .deploy-state.json
         dangerous-clean-slate: false

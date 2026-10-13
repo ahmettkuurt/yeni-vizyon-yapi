@@ -121,7 +121,7 @@ export default function Projects() {
                 <div className="relative rounded-xl overflow-hidden">
                   <img
                     src={img.url}
-                    alt={`Project ${i + 1}`}
+                    alt={img.title}
                     className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-500"
                     loading="lazy"
                   />
@@ -185,7 +185,7 @@ export default function Projects() {
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0, scale: 0.9 }}
               src={filteredImages[lightbox].url}
-              alt={`Project ${lightbox + 1}`}
+              alt={filteredImages[lightbox].title}
               className="max-w-full max-h-[85vh] object-contain rounded-lg shadow-2xl"
               onClick={e => e.stopPropagation()}
             />

@@ -494,12 +494,25 @@ const resources = {
   },
 };
 
+const isBrowser = typeof window !== "undefined";
+
+// Kayıtlı dil tercihi (yoksa Türkçe). Derleme sırasındaki ön-işlemede (prerender) her zaman Türkçe.
+export const initialLanguage = (() => {
+  if (!isBrowser) return "tr";
+  try {
+    return localStorage.getItem("i18nextLng") || "tr";
+  } catch {
+    return "tr";
+  }
+})();
+
+if (isBrowser) i18n.use(LanguageDetector);
+
 i18n
-  .use(LanguageDetector)
   .use(initReactI18next)
   .init({
     resources,
-    lng: localStorage.getItem("i18nextLng") || "tr",
+    lng: initialLanguage,
     fallbackLng: "tr",
     interpolation: {
       escapeValue: false,
