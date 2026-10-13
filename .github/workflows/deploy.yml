@@ -10,15 +10,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Kodları Çek
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
 
     - name: Node.js Kurulumu
-      uses: actions/setup-node@v3
+      uses: actions/setup-node@v4
       with:
-        node-version: 22 # Projenin kullandığı Node versiyonuna göre değiştirebilirsin
+        node-version: 22
+        cache: npm
 
     - name: Bağımlılıkları Yükle
-      run: npm install --legacy-peer-deps
+      run: npm ci
 
     - name: Projeyi Derle (Build)
       run: npm run build
@@ -29,7 +30,7 @@ jobs:
         server: 94.73.147.156
         username: u2680154
         password: ${{ secrets.FTP_PASSWORD }}
-        # ÖNEMLİ: Sadece build klasörünün içindekileri gönderiyoruz
-        local-dir: ./dist/public/ 
+        # Sadece build çıktısı (dist) gönderilir
+        local-dir: ./dist/
         server-dir: public_html/
         dangerous-clean-slate: false
