@@ -14,9 +14,9 @@ const resources = {
         catalog: "Katalog",
       },
       hero: {
-        title: "Geleceği İnşa Ediyoruz",
+        title: "İstanbul'da Kepenk, Çelik Yapı ve Ferforje",
         subtitle:
-          "Yeni Vizyon Yapı olarak, modern mimari anlayışı ve yılların deneyimiyle hayallerinizi gerçeğe dönüştürüyoruz.",
+          "Otomatik kepenk ve kapılardan çelik konstrüksiyona, alüminyum doğramadan çelik merdivene kadar tüm metal işlerinizde 15 yılı aşkın deneyim. Ücretsiz keşif için hemen arayın.",
         cta: "Projelerimizi Keşfedin",
         ctaSecondary: "Bize Ulaşın",
       },
@@ -117,9 +117,9 @@ const resources = {
         catalog: "Catalog",
       },
       hero: {
-        title: "Building the Future",
+        title: "Roller Shutters, Steel Structures & Wrought Iron in Istanbul",
         subtitle:
-          "At Yeni Vizyon Yapı, we turn your dreams into reality with modern architectural understanding and years of experience.",
+          "From automatic shutters and doors to steel construction, aluminum joinery and steel stairs: over 15 years of experience in all your metal work. Call now for a free site survey.",
         cta: "Explore Our Projects",
         ctaSecondary: "Contact Us",
       },
@@ -214,9 +214,9 @@ const resources = {
         catalog: "产品目录",
       },
       hero: {
-        title: "建设未来",
+        title: "伊斯坦布尔卷帘门、钢结构与铁艺",
         subtitle:
-          "Yeni Vizyon Yapı凭借现代建筑理念和多年经验，将您的梦想变为现实。",
+          "从自动卷帘门和自动门，到钢结构、铝合金门窗和钢楼梯，15年以上的金属工程经验。立即致电预约免费上门勘察。",
         cta: "探索我们的项目",
         ctaSecondary: "联系我们",
       },
@@ -310,9 +310,9 @@ const resources = {
         catalog: "Katalog",
       },
       hero: {
-        title: "Wir Bauen die Zukunft",
+        title: "Rolltore, Stahlbau und Schmiedeeisen in Istanbul",
         subtitle:
-          "Bei Yeni Vizyon Yapı verwandeln wir Ihre Träume mit modernem architektonischem Verständnis und jahrelanger Erfahrung in Realität.",
+          "Von automatischen Rolltoren und Türen über Stahlbau und Aluminiumfenster bis zu Stahltreppen: über 15 Jahre Erfahrung in allen Metallarbeiten. Rufen Sie uns für eine kostenlose Besichtigung an.",
         cta: "Unsere Projekte Entdecken",
         ctaSecondary: "Kontaktieren Sie Uns",
       },
@@ -407,9 +407,9 @@ const resources = {
         catalog: "الكتالوج",
       },
       hero: {
-        title: "نبني المستقبل",
+        title: "أبواب الرول والهياكل الفولاذية والحديد المشغول في إسطنبول",
         subtitle:
-          "في يني فيزيون يابي، نحول أحلامكم إلى حقيقة بفهم معماري حديث وسنوات من الخبرة.",
+          "من الأبواب والستائر الأوتوماتيكية إلى الهياكل الفولاذية ونجارة الألمنيوم والسلالم الفولاذية: أكثر من 15 عامًا من الخبرة في جميع أعمال المعادن. اتصل الآن لمعاينة مجانية.",
         cta: "اكتشف مشاريعنا",
         ctaSecondary: "تواصل معنا",
       },
