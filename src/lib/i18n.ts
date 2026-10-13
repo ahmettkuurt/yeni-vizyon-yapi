@@ -14,9 +14,9 @@ const resources = {
         catalog: "Katalog",
       },
       hero: {
-        title: "İstanbul'da Kepenk, Çelik Yapı ve Ferforje",
+        title: "İstanbul'da Çelik, Alüminyum ve Otomatik Kepenk",
         subtitle:
-          "Otomatik kepenk ve kapılardan çelik konstrüksiyona, alüminyum doğramadan çelik merdivene kadar tüm metal işlerinizde 15 yılı aşkın deneyim. Ücretsiz keşif için hemen arayın.",
+          "Fotoselli kapı, ofis bölme, pergola, tadilat ve dekorasyondan ferforje ve çelik merdivene kadar tüm işlerinizde 15 yılı aşkın deneyim. Ücretsiz keşif için hemen arayın.",
         cta: "Projelerimizi Keşfedin",
         ctaSecondary: "Bize Ulaşın",
       },
@@ -59,6 +59,14 @@ const resources = {
         wroughtIron: "Ferforje ve Mimari Demir Doğrama",
         wroughtIronDesc:
           "Mekanlarınıza değer katan özel tasarım, lüks detaylı ferforje bahçe/villa kapıları, korkuluklar ve sanatsal demir doğrama işleri yapıyoruz.",
+
+        pergola: "Pergola Sistemleri",
+        pergolaDesc:
+          "Teras, bahçe, balkon ve kafe alanları için ölçüye özel pergola sistemleri kuruyoruz.",
+
+        renovation: "Tadilat ve Dekorasyon",
+        renovationDesc:
+          "Ev, ofis ve iş yerleriniz için tadilat ve dekorasyon işlerini tek elden yürütüyoruz.",
       },
       projects: {
         tag: "Projelerimiz",
@@ -117,9 +125,9 @@ const resources = {
         catalog: "Catalog",
       },
       hero: {
-        title: "Roller Shutters, Steel Structures & Wrought Iron in Istanbul",
+        title: "Steel, Aluminum & Automatic Shutters in Istanbul",
         subtitle:
-          "From automatic shutters and doors to steel construction, aluminum joinery and steel stairs: over 15 years of experience in all your metal work. Call now for a free site survey.",
+          "From photocell doors, office partitions, pergolas, renovation and decoration to wrought iron and steel stairs: over 15 years of experience in all your projects. Call now for a free site survey.",
         cta: "Explore Our Projects",
         ctaSecondary: "Contact Us",
       },
@@ -156,6 +164,14 @@ const resources = {
         wroughtIron: "Wrought Iron and Architectural Ironworks",
         wroughtIronDesc:
           "We create custom-designed, luxury-detailed wrought iron garden/villa gates, railings, and artistic iron joinery works that add value to your spaces.",
+
+        pergola: "Pergola Systems",
+        pergolaDesc:
+          "We install made-to-measure pergola systems for terraces, gardens, balconies and cafés.",
+
+        renovation: "Renovation and Decoration",
+        renovationDesc:
+          "We handle renovation and decoration work for homes, offices and workplaces from a single source.",
       },
       projects: {
         tag: "Our Projects",
@@ -214,9 +230,9 @@ const resources = {
         catalog: "产品目录",
       },
       hero: {
-        title: "伊斯坦布尔卷帘门、钢结构与铁艺",
+        title: "伊斯坦布尔钢结构、铝合金与自动卷帘门",
         subtitle:
-          "从自动卷帘门和自动门，到钢结构、铝合金门窗和钢楼梯，15年以上的金属工程经验。立即致电预约免费上门勘察。",
+          "从感应门、办公隔断、凉亭、装修与装饰，到铁艺和钢楼梯，15年以上的工程经验。立即致电预约免费上门勘察。",
         cta: "探索我们的项目",
         ctaSecondary: "联系我们",
       },
@@ -253,6 +269,14 @@ const resources = {
         wroughtIron: "铁艺与建筑铁艺门窗",
         wroughtIronDesc:
           "我们定制设计具有奢华细节的铁艺庭院/别墅大门、栏杆和艺术铁艺工程，为您的空间增添价值。",
+
+        pergola: "凉亭系统",
+        pergolaDesc:
+          "为露台、花园、阳台和咖啡馆量身定制凉亭系统。",
+
+        renovation: "装修与装饰",
+        renovationDesc:
+          "为住宅、办公室和商业场所提供一站式装修与装饰服务。",
       },
       projects: {
         tag: "我们的项目",
@@ -310,9 +334,9 @@ const resources = {
         catalog: "Katalog",
       },
       hero: {
-        title: "Rolltore, Stahlbau und Schmiedeeisen in Istanbul",
+        title: "Stahl, Aluminium und Automatik-Rolltore in Istanbul",
         subtitle:
-          "Von automatischen Rolltoren und Türen über Stahlbau und Aluminiumfenster bis zu Stahltreppen: über 15 Jahre Erfahrung in allen Metallarbeiten. Rufen Sie uns für eine kostenlose Besichtigung an.",
+          "Von Fotozellentüren, Bürotrennwänden, Pergolen, Renovierung und Dekoration bis zu Schmiedeeisen und Stahltreppen: über 15 Jahre Erfahrung in all Ihren Projekten. Rufen Sie uns für eine kostenlose Besichtigung an.",
         cta: "Unsere Projekte Entdecken",
         ctaSecondary: "Kontaktieren Sie Uns",
       },
@@ -349,6 +373,14 @@ const resources = {
         wroughtIron: "Schmiedeeisen und architektonische Metallarbeiten",
         wroughtIronDesc:
           "Wir fertigen maßgeschneiderte, luxuriöse schmiedeeiserne Garten-/Villentore, Geländer und kunstvolle Metallarbeiten, die Ihren Räumen Wert verleihen.",
+
+        pergola: "Pergola-Systeme",
+        pergolaDesc:
+          "Wir installieren maßgefertigte Pergola-Systeme für Terrassen, Gärten, Balkone und Cafés.",
+
+        renovation: "Renovierung und Dekoration",
+        renovationDesc:
+          "Wir übernehmen Renovierungs- und Dekorationsarbeiten für Wohnungen, Büros und Geschäftsräume aus einer Hand.",
       },
       projects: {
         tag: "Unsere Projekte",
@@ -407,9 +439,9 @@ const resources = {
         catalog: "الكتالوج",
       },
       hero: {
-        title: "أبواب الرول والهياكل الفولاذية والحديد المشغول في إسطنبول",
+        title: "الفولاذ والألمنيوم والأبواب الأوتوماتيكية في إسطنبول",
         subtitle:
-          "من الأبواب والستائر الأوتوماتيكية إلى الهياكل الفولاذية ونجارة الألمنيوم والسلالم الفولاذية: أكثر من 15 عامًا من الخبرة في جميع أعمال المعادن. اتصل الآن لمعاينة مجانية.",
+          "من أبواب الخلية الضوئية وفواصل المكاتب والبرجولا والترميم والديكور إلى الحديد المشغول والسلالم الفولاذية: أكثر من 15 عامًا من الخبرة في جميع مشاريعكم. اتصل الآن لمعاينة مجانية.",
         cta: "اكتشف مشاريعنا",
         ctaSecondary: "تواصل معنا",
       },
@@ -446,6 +478,14 @@ const resources = {
         wroughtIron: "الحديد المطاوع والأعمال الحديدية المعمارية",
         wroughtIronDesc:
           "نقوم بتصميمات مخصصة بلمسات فاخرة لأبواب الحدائق والفلل من الحديد المطاوع، والدرابزين، والأعمال الحديدية الفنية التي تضفي قيمة على مساحاتك.",
+
+        pergola: "أنظمة البرجولا",
+        pergolaDesc:
+          "نركّب أنظمة برجولا حسب المقاس للتراسات والحدائق والشرفات والمقاهي.",
+
+        renovation: "الترميم والديكور",
+        renovationDesc:
+          "ننفّذ أعمال الترميم والديكور للمنازل والمكاتب وأماكن العمل من مصدر واحد.",
       },
       projects: {
         tag: "مشاريعنا",

@@ -67,7 +67,7 @@ export default function Footer() {
           <div>
             <h4 className="text-sm font-bold tracking-widest uppercase text-[#E8B84B] mb-6">{t("services.tag")}</h4>
             <ul className="space-y-3">
-              {["steelStructure", "autoDoor", "aluminum", "stairs"].map((key) => (
+              {["autoDoor", "aluminum", "steelStructure", "pergola", "renovation"].map((key) => (
                 <li key={key}>
                   <span className="text-white/50 text-sm font-[family-name:var(--font-body)]">
                     {t(`services.${key}`)}

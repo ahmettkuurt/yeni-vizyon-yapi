@@ -7,7 +7,10 @@ import {
   Construction,
   Lightbulb,
   Compass,
+  Tent,
+  PaintRoller,
 } from "lucide-react";
+import { images } from "@/lib/images";
 
 const serviceIcons = [
   Home,
@@ -16,6 +19,8 @@ const serviceIcons = [
   Construction,
   Lightbulb,
   Compass,
+  Tent,
+  PaintRoller,
 ];
 const serviceKeys = [
   "steelStructure",
@@ -24,7 +29,12 @@ const serviceKeys = [
   "stairs",
   "lightSteel",
   "wroughtIron",
+  "pergola",
+  "renovation",
 ] as const;
+
+// Fotoğrafı olan hizmetler projelere filtreler; olmayanlar iletişime götürür.
+const hasPhotos = (key: string) => images.projects.some(p => p.category === key);
 
 export default function Services() {
   const { t } = useTranslation();
@@ -56,13 +66,17 @@ export default function Services() {
         </motion.div>
 
         {/* Service Cards */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-6">
           {serviceKeys.map((key, i) => {
             const Icon = serviceIcons[i];
             return (
               <motion.div
                 key={key}
                 onClick={() => {
+                  if (!hasPhotos(key)) {
+                    document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
+                    return;
+                  }
                   // URL'deki hash'i değiştirerek Projects bileşenindeki useEffect'i tetikleriz
                   window.location.hash = `projects-${key}`;
                   // Sayfayı projeler kısmına kaydır
@@ -73,7 +87,7 @@ export default function Services() {
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: i * 0.1 }}
+                transition={{ duration: 0.5, delay: (i % 4) * 0.1 }}
                 className="group cursor-pointer relative bg-white rounded-2xl p-8 shadow-sm border border-gray-100 hover:shadow-xl hover:shadow-[#1976D2]/5 hover:-translate-y-1 transition-all duration-300"
               >
                 {/* Icon */}
